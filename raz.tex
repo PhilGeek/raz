@@ -1,0 +1,467 @@
+%!TEX TS-program = xelatex 
+%!TEX TS-options = -output-driver="xdvipdfmx -E"
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage{geometry} \geometry{a4paper} 
+\usepackage{url}
+\usepackage{pdfsync} 
+
+% XeTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
+\setmainfont{Hoefler Text}
+\setsansfont{Gill Sans}
+\setmonofont{Inconsolata}
+
+% Section formatting
+\usepackage[]{titlesec}
+\titleformat{\section}[hang]{\fontsize{14}{14}\scshape}{\S\,{\thesection}}{.5em}{}{}
+\titleformat{\subsection}[hang]{\fontsize{12}{12}\scshape}{\S\,{\thesubsection}}{.5em}{}{}
+\titleformat{\subsubsection}[hang]{\fontsize{12}{12}\scshape}{\S\,{\thesubsubsection}}{.5em}{}{}
+
+% Headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\itshape{\nouppercase{\leftmark}}}
+
+% Definitions
+\def\mykeywords{value, respect, Kant, Raz} 
+\def\myauthor{Mark Eli Kalderon} 
+\def\mytitle{Respecting Value}
+
+% Bibliography
+\usepackage[round]{natbib} 
+
+% PDF Stuff
+\usepackage[ plainpages=false, pdfpagelabels, bookmarksnumbered, pdftitle={\mytitle}, pagebackref, pdfauthor={\myauthor}, pdfkeywords={\mykeywords} ]{hyperref} 
+
+% Title Information
+\title{\mytitle \thanks{Thanks to MGF Martin, Veroniqu\'e Munoz-Dard\'e, Joseph Raz, and Charles Travis for their help and encouragement.}} 
+\author{\myauthor} 
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+% Title Page
+
+\maketitle
+
+% Copyright Page
+%\textcopyright{} \mycopyright
+%
+% Main Content
+%
+% Layout settings
+\setlength{\parindent}{1em}
+
+\vskip 2em \hrule height 0.4pt \vskip 2em
+
+\section{Introduction} \label{sec:introduction} % (fold)
+
+In chapter four of \emph{Value, Respect, and Attachment}, Raz \citeyearpar{Raz:2001ps} describes his views about respect as having a Kantian origin. Raz introduces his discussion by raising three questions concerning Kant's account: 
+\begin{itemize}
+	\item Why is there no analogue of the feeling of respect in Kant's treatment of theoretical reason? (\S\ref{sec:why_is_there_no_analogue_of_respect_in_theoretical_reason}) 
+	\item What is the proper object of respect---the moral law or people considered as ends in themselves? (\S\ref{sec:what_is_the_object_of_respect}) 
+	\item How could people be ends, let alone ends in themselves, if ends are states of affairs intentionally brought about by action? (\S\ref{sec:how_could_people_be_ends}) 
+\end{itemize}
+These questions form the basis of Raz's criticisms of Kant, criticisms which, in turn, motivate Raz's own account of respect. Unfortunately, I do not believe that Raz's criticisms can be sustained in the end. Kant's doctrines, properly interpreted, evades these criticisms. 
+
+The present essay thus has historical aims, but not only these---there are  philosophical aims as well. 
+
+Part of the point of getting Kant right is to avail ourselves of the philosophical insights that Kant affords---insights that we ignore at our peril in understanding the moral phenomenon of respect. Not only does a proper interpretation of Kant afford us genuine philosophical insights into the nature of respect, but, as we will see, Raz's own insights into the metaphysics of value provide an important supplementation and elaboration of these. Indeed, it provides the basis of a defensible, if not altogether faithful, interpretation of Kant's derivation of the Formula of Humanity. 
+
+In this way, history contributes to philosophy. Not only does a proper interpretation of Kant afford us with genuine philosophical insights, but philosophy, in turn, can contribute to history. Many of Raz's criticisms crucially turn on misinterpretations of Kant's views---misinterpretations, in turn, facilitated by \emph{philosophical} errors. Very often a correct philosophy will see us through to a proper interpretation of Kant.
+
+Thus I will be pursuing both history and philosophy with an eye to illuminating each.
+
+% Original version of the introductory paragraph
+% In chapter four of \emph{Value, Respect, and Attachment}, Raz \citeyearpar{Raz:2001ps} describes his views about respect as having a Kantian origin. This might raise the eyebrow of some neo-Kantians or anyone inclined to interpret Kant as a formalist or as a constructivist. Nevertheless, I believe that Raz's views and Kant's, properly interpreted and developed, have more in common than even Raz suspects. To bring this out, I will take up three questions that Raz raises concerning Kant's doctrine: 
+% \begin{itemize}
+%   \item Why is there no analogue of the feeling of respect in Kant's treatment of theoretical reason? (\S\ref{sec:why_is_there_no_analogue_of_respect_in_theoretical_reason}) 
+%   \item What is the proper object of respect---the moral law or people considered as ends in themselves? (\S\ref{sec:what_is_the_object_of_respect}) 
+%   \item How could people be ends, let alone ends in themselves, if ends are states of affairs intentionally brought about by action (\S\ref{sec:how_could_people_be_ends}) 
+% \end{itemize}
+
+Raz's three questions will be considered, in turn, in the following three sections. In his discussion of Kant, Raz sets aside the phenomenal--noumenal distinction, and I will follow him in this. Some of the limitations of this procedure will be discussed in the final section.
+
+
+\section{Why Is There No Analogue of Respect in Theoretical Reason?} \label{sec:why_is_there_no_analogue_of_respect_in_theoretical_reason} % (fold)
+
+Raz claims that there is a puzzling asymmetry between Kant's treatment of theoretical and practical reason: 
+\begin{quote}
+	\ldots Kant treats practical reason differently from theoretical reason. There is no analogue to respect in his treatment of theoretical reason. But if reason can determine the will to believe one thing or another, with no special feeling of respect being invoked, why can it not determine the will to will one thing or another without such feeling? \citep[132--3]{Raz:2001ps} 
+\end{quote}
+
+In the \emph{Groundwork}, Kant insists on the unity of theoretical and practical reason. Thus the asymmetry is not the result of the distinct operation of distinct faculties. The asymmetry must be explained in another way.
+
+One asymmetry that Kant postulates between theoretical and practical reason is the different philosophical challenges they pose: 
+\begin{quote}
+    GIVE KANT QUOTE FROM GROUNDWORK
+\end{quote}
+In the theoretical case, Kant argues that pure reason has a tendency to exceed its proper limits and thus involve itself with the antinomies. In contrast, in the case of practical reason, it is \emph{empirical} and not \emph{pure} practical reason, at the prompting of inclination, that tends to exceed proper limits, especially when the moral law and its basis in the nature of persons is unclear to us. Perhaps, then, the focus on the feeling of respect in Kant's account of practical reasoning is a reflection of the moral and philosophical challenges posed by our empirical natures.
+
+Inclination is that aspect of our empirical nature that is the source of these moral and philosophical challenges. In a note in the \emph{Groundwork}, Kant defines inclination as `the dependence of the faculty of desire on feeling' (\textsc{g} 4:414n). That is not terribly helpful. This is one example of the way in which the underlying moral psychology of the \emph{Groundwork} can be frustratingly incomplete. 
+
+The moral psychology that underlies Kant's ethics will be refined, elaborated, and, in some respects, revised in subsequent work. However, a subsequent elaboration provides the basis of an interpretation of the, otherwise puzzling, characterization of inclination as `the dependence of the faculty of desire on feeling'.
+
+In the \emph{Critique of the Power of Judgement}, Kant divides the mind's powers into three faculties (\textsc{ku} 5:198): 
+\begin{itemize}
+	\item The faculty of cognition 
+	\item The faculty of feeling 
+	\item The faculty of desire 
+\end{itemize}
+The faculty of desire is the mind's capacity to produce an object by means of a representation. It stands midway between the faculties of cognition and feeling in that it depends on each: Desiring an object involves having a \emph{representation} of an object accompanied by a \emph{feeling} of pleasure. In contrast, an aversion involves a representation of an object accompanied by a feeling of displeasure. In empirical desire or aversion, the feeling of pleasure or displeasure is the contingent effect of the representation of an object impinging on one's faculty of feeling. When an empirical desire becomes habitual, it is an inclination. When an empirical aversion becomes habitual, it is fear. It is the way in which the pleasure (or displeasure) involved in the habitual empirical desire depends on the contingent configuration of the faculty of feeling (which can vary from one finite rational being to another) that Kant plausibly has in mind when he defines inclination as the `dependence of the faculty of desire on feeling'.
+
+Following Hume, Kant holds that the regular operation of habit occurs unreflectively. However, when a person reflects and judges that pleasure is regularly connected with an object, a person takes an interest in that object. Thus awareness of an inclination produces an interest in the object (\textsc{g} 4:413). When an interest arises from inclination it is a pathological interest. Interest, however, can arise from rational grounds as well. When it does, it is a practical interest.
+
+Like Hume, Kant claims that all action involves desire. Unlike Hume, Kant claims that not all desire is empirical. Even in circumstances where the objects of inclination are grounds for action, it is reason that determines whether this is so. Rational beings view their empirical desires as potential grounds of rational choice. Pure desires, in contrast, are not grounds of rational choice, even potentially, but are noncognitive responses to these grounds. Thus a person acts from duty, not because he antecedently wants to; rather, a person desires to do his duty because he recognizes the reasons he must. The interest in the moral law involved in acting from duty is practical, not pathological. The desire in acting from duty is pure, and the feeling involved in this pure desire is the feeling of respect.
+
+Kant's talk of the feeling of respect can mislead. Respect is not, or not merely, a feeling. It is also a way of treating people (as ends in themselves and never merely as means). The feeling of respect is part of the noncognitive response to the reasons there are for such treatment.
+
+The asymmetry that Raz observes between theoretical and practical reason is the consequence of: 
+\begin{itemize}
+	\item Kant's conception of desire as a representation of its object accompanied by a feeling of pleasure, 
+	\item Kant's subscription to the Humean claim that all action proceeds from desire, and 
+	\item Kant's claim the determination of judgment does not involve desire in the way that the determination of the will does. 
+\end{itemize}
+One might \emph{disagree} with the postulation of this asymmetry \citep[see][]{Raz:2000tm,Raz:2001ps,Scanlon:1998hb}, but it is not particularly \emph{puzzling}.
+
+An important observation about pure desire forestalls one potential source of disagreement. Kant understands the Humean claim that all action proceeds from desire as a \emph{psychological} and not a \emph{normative} claim. It is a claim about the psychology of practical deliberation and not a claim about what reasons there are. Pure desires are noncognitive responses to a person's reasons as he understands them to be. They are a response to what reasons there are and not themselves reasons for action. So doubts about the extent to which desires could be reasons for action are no embarrassment for at least this aspect of Kantian moral psychology.
+
+If pure desires are not sources of reasons then why are they psychologically necessary? In \S\ref{sub:on_not_treating_people_merely_as_a_means} we will see that pure desires play an important explanatory role in the motivational psychology of a virtuous sensibility. As we will see, this is morally, as well as psychologically, significant. Indeed, it is an important part of the resolution of the moral and philosophical challenges posed by our empirical natures.
+
+% section why_is_there_no_analogue_of_respect_in_theoretical_reason (end)
+
+\section{What Is the Object of Respect?} \label{sec:what_is_the_object_of_respect} % (fold)
+
+In a long note in section one of the \emph{Groundwork} Kant seems to claim that the fundamental object of respect is the moral law and that persons are only objects of respect derivatively, as exemplars of the law. Raz complains, however, that Kant does not always adhere to his official explanation, particularly, when he claims that persons are ends in themselves and must always be treated as such and never merely as a means: 
+\begin{quote}
+	The two grounds of respect (i.e., people exemplifying the moral law by following it, and people being ends in themselves) are quite different and could lead to different reasons for action. However, for Kant the two converge, and so the slippage in meaning is easy to overlook. \citep[136]{Raz:2001ps} 
+\end{quote}
+
+The two grounds of respect are conceptually independent, so there is some justice to his worry that they might ground independent reasons for action. Whether they do \emph{as Kant understands them}, however, depends on details of their role in Kant's system. I must confess, however, that I find the charge of a slippage in meaning unfair. Perhaps Kant is proposing a substantive identification. Perhaps respect for the moral law \emph{just is} respect for persons considered as ends in themselves. 
+
+Before resolving this issue, let's first complicate it by considering Kant's controversial views about the illegitimacy of interpersonal moral comparisons \citep[see][ch.~4, \S6]{Wood:1999zy}.
+
+Kant writes: 
+\begin{quote}
+	Fontenelle says: `I bow to a great man, but my mind does not bow.' I can add: before a humble plain man, in which I perceive an uprightness of character in greater measure than I am conscious of in myself, \emph{my mind bows} whether I choose or not, however high I may carry my head in order that he may not forget my superiority. Why? His example holds a law before me which strikes down my self conceit when I compare my own conduct with it. (\textsc{kpv} 5:76-77) 
+\end{quote}
+
+On a casual reading, this passage is an expression of humility given a comparison between Kant and the humble plain man. However, Kant is making no such comparison. When Kant acknowledges the uprightness of the humble plain man, he recognizes the emptiness of his self-conceit and experiences humility when he compares his conduct with the moral law. Kant is reinterpreting moral judgments we make comparing ourselves with others as judgments comparing ourselves with the moral law.
+
+This can seem like a theoretical commitment taken to the extreme. Kant's doctrine that the object of respect is the moral law leads him to reinterpret interpersonal moral comparisons familiar from everyday life. Kant is indeed engaged in a revision of, if not the moral judgments we make, then at least our understanding of them. But there is a distinctively moral, and not merely theoretical, point to this revision---a moral point that makes it plain that Kant is indeed making the substantive identification that I claim he is.
+
+The moral point has positive and negative aspects.
+
+The positive aspect concerns the absolute dignity of humanity. Being absolute, the dignity of rational beings is \emph{equal}. Kant takes this consequence very seriously. According to Kant, the serpent spoke truly to Eve, when he claimed that by eating the fruit of the tree of knowledge of good and evil they would become equal to God. In gaining practical reason (knowledge of good and evil), Adam and Eve become equal to God in the sense that every rational being has equal and absolute worth (\textsc{ma} 8:115). The ban on interpersonal moral comparisons is the expression of the dignity of humanity which is absolute and hence equal between rational beings.
+
+The negative aspect concerns a diagnosis of human wrongdoing. Like Hume, Kant takes it for granted that we all more or less know right from wrong. However, they differ in their attitudes towards human nature---Humean cheerfulness is counterbalanced by Kantian suspicion. On Kant's view, we are locked in a struggle between competing conceptions of our value. 
+
+On the one hand, we are rational beings and thus endowed with the capacity of free rational choice. Our free reason enjoins us to show equal respect for the dignity of all humanity and constrains us to act on principles capable of uniting all human ends into a harmonious system. Our free reason is the source of a conception of our value based on the absolute dignity of our common humanity. 
+
+On the other hand, we are finite beings and thus subject to inclination and need. Inclination and need are the source of both our mutual interdependence and mutual hostility. Kant, inspired by Rousseau, describes this as our `unsocial sociability'. This unsocial sociability is the source of a conception of our value based on competition and comparative advantage. 
+
+These conceptions of our value are not only distinct but practically conflict as well. Specifically, our unsocial sociability is the source of the continual temptation to make exceptions for ourselves to universal moral principles to the advantage of inclination. (See \S~\ref{sub:on_not_treating_people_merely_as_a_means} for more discussion of this.) So the ban on interpersonal moral comparisons is due, in part, to the fact that interpersonal comparative judgments are a mode of thinking and evaluation rooted in a misconception of our value that is the source of human wrongdoing.
+
+What seems to us to be a curious focus on the moral law is, by Kant's lights, at once the expression of respect for the dignity of humanity and a condemnation of an alternative and misconceived conception of our value based on competition and comparative advantage. Thus, respect for the moral law \emph{just is} respect for persons considered as ends in themselves.
+
+Indeed, this identification is implicit in Kant's account of his encounter with Rousseau: 
+\begin{quote}
+	I am an inquirer by inclination. I feel a consuming thirst for knowledge, the unrest which goes with the desire to progress in it, and satisfaction with every advance in it. There was a time when I believed this constituted the honor of humanity, and I despised the people, who know nothing. Rousseau set me right about this. The blinding prejudice disappeared. I learned to honor human beings, and I would find myself more useless than the common laborer if I did not believe that this attitude of mine can give worth to all others in establishing the rights of humanity. (\textsc{ak} 20:44) 
+\end{quote}
+The first thing to notice is that this account is a \emph{conversion narrative}---Kant was lost but now is found, was blind but now can see. As a conversion narrative, it self-consciously reports an experience that affords a moral insight so profound that it forever transforms Kant's character. The moral insight at the heart of Kant's conversion motivates his later theoretical articulation of it. Prior to his encounter with Rousseau's work, Kant conceived of his self-worth in terms of his comparative intellectual advantage over others. Afterwards, his conception of his value and the value of others is transformed. He would be lower than the common laborer that he formerly despised for ignorance if he did not acknowledge and act on behalf of the equal rights of \emph{all} humanity. Kant's irony here is pointed---he rejects a conception of his value based on comparison and ranking in favor of a value shared unconditionally and without limitation by all. Kant is a \emph{radical} egalitarian---the dignity of humanity is equal not only in the sense that it is shared by all but also in the sense that its value is \emph{incomparable}. Regarding the value of humanity as an object of comparison dishonors humanity---`The opinion of inequality makes people unequal. Only the teaching of M.\ R can bring it about that even the most learned philosopher with his knowledge holds himself, uprightly and without the help of religion, no better than the common human being.' (\textsc{ak} 20:176). Proper respect for humanity requires that one only compare one's conduct with the moral law and not with the conduct of other rational beings. Respect for the moral law just is respect for persons considered as ends in themselves.
+
+One might object as follows: To be sure, the dignity of humanity, being absolute, is equal, in the sense that it is shared unconditionally and without limitation by all rational beings. But the \emph{moral} or \emph{inner} worth of human beings varies from one individual to another---there are saints and sinners among us. If inner worth can so vary why can't this be acknowledged by an explicit comparative judgment?
+
+Comparison of inner worth would only be possible if there were a common standard by which to judge. According to Kant, however, there is no such common standard and so no such comparison is possible.
+
+A person's inner worth is not a matter of their acting in conformity with duty; rather, it is a matter of their acting from duty in the absence of positive inclination or in the face of contrary inclination. However, temperament and inclination can vary from one person to another and operate in contingent circumstances perhaps unique to that individual. This makes the moral challenges facing individuals incomparable: 
+\begin{quote}
+	Who knows what drove him to it? Perhaps with his temperament what he did was no worse than a trifling misdeed would be for a person with mine? (\textsc{ve} 27:418)
+	
+	How may people who have lived long and guiltless lives may not be merely \emph{fortunate} in having escaped many temptations? (\textsc{ms} 6:392-393) 
+\end{quote}
+The standard by which to judge the inner worth of an individual is the specific challenges he faces in acting as the moral law directs---challenges that arise from temperament and inclination operating in historically conditioned, contingent circumstances. These, however, vary from person to person, and if they do, there is no common standard to form the basis of moral comparison. 
+
+Is human character really unique in this way? It seems at least logically possible that two individuals could have the same configuration of inclinations operating in qualitatively identical circumstances. (Consider the striking similarity in character and biography of identical twins separated at birth.) One might nevertheless concede that the moral challenges facing individuals are \emph{de facto} unique. (Compare Raz's, \citeyear[ch.\ 1]{Raz:2001ps}, discussion of the \emph{de facto} uniqueness of our personal attachments.) The \emph{de facto} uniqueness of our moral challenges suffices to make moral comparisons practically, if not logically, impossible. Even so, one may wonder to what degree the moral challenges vary from person to person. Perhaps the differences are only slight, at least for the vast majority of persons. However, for Kant, this question is destined to remain open, for he consistently maintains that human character is ultimately unknowable, at least to its full extent. So even if there were an approximate standard sufficient for rough and ready comparisons of inner worth, we could not know it. The moral challenges facing an individual are unknowable, no common standard is available, and hence no comparison of inner worth is possible.
+
+Kant's categorical ban on interpersonal moral comparisons is controversial, even for those sympathetic to his egalitarianism and his accommodation of human diversity. Nevertheless, it is worth emphasizing how radically different Kantian egalitarianism is from contemporary distributive egalitarianism. As a representative, consider Cohen's statement of that doctrine: 
+\begin{quote}
+	I take for granted that there is something which justice requires people to have equal amounts of, not no matter what, but to whatever extent is allowed by values which compete with distributive equality; and I study what a number of authors who share that egalitarian view have said about the dimension(s) or respect(s) in which people should be made more equal, when the price in other values of moving toward greater equality is not intolerable. \citep[906ff]{Cohen:1989vl} 
+\end{quote}
+
+Equality is conceived to be a structural feature of states of affairs---an egalitarian state of affairs is one in which people are in certain respects equal. This structural feature of states of affairs is intrinsically valuable---it is good that people are in these respects equal. The value of equality makes it intelligible to promote states of affairs with this structure, and the reasons it grounds are to be balanced against the reasons grounded in other values to be promoted \citep[compare][]{Nagel:1979tk}. So understood, judgments of equality and inequality are explicitly comparative---they are judgments about the respects in which it would be good that people be made equal. Like contemporary distributive egalitarians, Kant claims that, at least in certain circumstances, gross inequalities in civic society are unjust, but his grounds for this judgment are radically different from Cohen's. The injustice is due to the grossly unequal distribution contravening, in those circumstances, the dignity of humanity and not due to the intrinsic value of an egalitarian distribution. Thus the values that they appeal to are different since they inhere in different things---in the structure of a distribution and in rational nature, respectively. By Kant's lights, in taking the value of an egalitarian distribution, in circumstances where it is genuinely valuable, to be grounded in its abstract structure rather than the nature of its recipients, Cohen mistakes an impartial value for an impersonal value (see \citealt[\S 30]{Rawls:1971jz}, and \citealt{Munoz-Darde:2005ed}). Not only do Kant and Cohen appeal to different values, but the nature of these values themselves differ: Whereas the value of an egalitarian distribution may be balanced against the value of other goods, the value of humanity is incomparable. (For related contemporary discussion see \citealp{Frankfurt:1988ay,Frankfurt:1999lt,Munoz-Darde:2005ed}.) 
+
+Kant would regard contemporary distributive egalitarianism as a morally abhorrent doctrine, quite literally an affront to human dignity. Specifically, its fundamental mode of evaluation dishonors humanity by making it an object of comparison in a manner incompatible with its dignity. Moreover, this comparative form evaluation is rooted in a misconception of our value that is the source of wrongdoing. Given his suspicious attitude towards human nature, Kant might even endorse Nietzsche's view that egalitarianism, so understood, is the expression of \emph{ressentiment}. In fortunate circumstances, where everyone has more than enough, not only to survive but to flourish, but not everyone has the same, what other motive could there be for complaint? Whether or not one finds Kant's views plausible, this serves as a vivid reminder how differently we interpret the Enlightenment ideals of \emph{libert\'e, \'egalit\'e, fraternit\'e} than the authors of these ideals. We may well wonder whether this constitutes a genuine advance in our thinking.
+
+% section what_is_the_object_of_respect (end)
+
+\section{How Could People be Ends?} \label{sec:how_could_people_be_ends} % (fold)
+
+Kant's Formula of Humanity reads: 
+\begin{quote}
+	So act that you use humanity, whether in your own person or that of another, always at the same time as an end, never merely as a means. (\textsc{g} 4:429; 4:436) 
+\end{quote}
+
+The Formula of Humanity is intended as a general characterization of impermissible action. More than that, it purports to provide a substantive explanation of impermissible action in terms of a distinctive kind of value that people enjoy. Part of the power of the Formula of Humanity consists in this explanatory ambition. Indeed the descriptive and explanatory ambitions are linked. The Formula of Humanity is not a general characterization of impermissible action in the sense that it provides a mechanical algorithm from which more specific duties may be derived. Rather, the Formula of Humanity is a general characterization of impermissible action in the sense that it specifies the substantive value that grounds our duty.
+
+The Formula of Humanity resonates with many people, not all of them Kantians. Yet despite the emotional power of the formula, its content can prove elusive. Let me begin by raising some questions concerning it, not all of which I can hope to answer fully here.
+
+One obstacle to interpretation, as Raz observes, is unclarity about how people could be ends, let alone ends in themselves: 
+\begin{quote}
+	I can make it my end to get people jobs, or to see it that they come to no harm, or to insure them a comfortable income, or to keep them from temptation, and so on. But can they themselves, rather than securing them something, be my end? \citep[144]{Raz:2001ps} 
+\end{quote}
+Raz's doubt that people could be ends is not uncommon; indeed, it echoes a doubt earlier raised by Sidgwick:
+\begin{quote}
+    The conception of `humanity as an end in itself' is perplexing: because by an End we commonly mean something to be realised, whereas `humanity' is, as Kant says, `a self-subsistent' end. \citep[39]{Sidgwick:1981jk}
+\end{quote}
+To get a person a job is to bring about a certain state of affairs---that the person is employed. And so it is with all of Raz's other examples---each is a potential if nonexistent state of affairs that a person intends to bring about by action. However, while people may figure in states of affairs, people are not themselves states of affairs. So it is hard to understand how people could be ends, let alone ends in themselves, if an end is a state of affairs intentionally brought about by action. 
+
+Unclarity about how people could be ends might encourage an interpretation of the formula that focuses on its second half---the injunction to treat people never merely as a means.
+
+A natural way of developing this idea is as follows: If there are limitations on how we deal with people not derivable from their potential use for our own ends, then people must have noninstrumental value---people must possess an intrinsic, noninstrumental value that grounds what reasons there are for limiting our treatment of them. And if these limitations may not be overridden, then it can seem that we have captured much of what Kant meant by describing people as ends in themselves. Nozick's notion of a side constraint offers just such interpretation:
+\begin{quote}
+    Side constraints upon action reflect the underlying Kantian principle that individuals are ends and not merely means \ldots There is no side constraint on how we may use a tool, other than the moral constraints on how we may use it upon others \ldots there is no limit on what we may do to it to best achieve our goals. Now imagine that there was an overridable constraint C on some tool's use. For example, the tool might have been lent to you only on the condition that C not be violated unless the gain from doing so was above a certain specified amount, or unless it was necessary to achieve a certain specified goal. Here the object is not \emph{completely} your tool, for use according to your wish or whim. But it is a tool nevertheless, even with regard to the overridable constraint \ldots If we add constraints on its use that may not be overridden, then the objects may not be used as a tool \emph{in those ways}. \emph{In those respects}, it is not a tool at all. Can one add enough constraints so that an object cannot be used as a tool at all, in \emph{any} respect? \citep[p. xx]{Nozick:1974as}
+\end{quote}
+% TODO Find page references
+
+Raz makes three important criticisms of this interpretation.
+
+First, from the fact that there are limitations on how we deal with people not derivable from their potential use for our own ends, it follows that they have intrinsic, noninstrumental value. It does not, however, follow that they are ends in themselves. Purposeless actions, such as expressive actions, are Raz's example. If it is intelligible in some circumstance for me to kick the table in exasperation, then kicking the table must have some value not derivable from my purpose in kicking the table for it has none, but there is no plausible interpretation of ends in themselves in which such actions qualify.
+
+Second, the idea that there are limitations on our treatment of people that may not be overridden is controversial, and it is natural to want an explanation of this feature rather than merely taking it for granted.
+
+This leads to Raz's third, and most fundamental, criticism. The present interpretation purports to explain the nature of ends in themselves in terms of the permissible forms of treatment of people. But this is to abandon the explanatory ambition of the Formula of Humanity. The notion of an end in itself is supposed to be the \emph{grounds} of such treatment in the sense that in explains and renders intelligible that certain forms of treatment are permissible or impermissible. In order to explain and render intelligible the permissibility or impermissibility of forms of treatment, the nature of ends in themselves must be specified, at least in part, independently of such treatment.
+
+To Raz's three criticisms let me add a fourth. Not only has the explanatory ambition of the Formula of Humanity been abandoned, but so has its descriptive ambition. The formula is meant to be a general characterization of permissible and impermissible treatment of people. It is a general characterization in the sense that it specifies the substantive value that explains and renders intelligible that certain forms of treatment of people are permissible or impermissible. But the present interpretation takes the permissible and impermissible treatment of people as antecedently understood and explains the nature of ends in themselves in terms of such treatment. It accomplishes none of what Kant hoped to achieve.
+
+This is not the only possible interpretation of the injunction to never treat people merely as a means. Perhaps we can do better. \cite{Scanlon:2004ac} observes that one obstacle to such an interpretation is that treating people merely as a means seems to characterize a particular class of wrongs. `You were just using me!' seems to be a charge with a particular moral force not appropriate to all forms of wrongdoing. If someone is drowning and you walk buy without pulling a lever which would summon the emergency services, you have wronged that person, to be sure, but you have not used that person, at least not in the ordinary sense. Again, the descriptive ambition of the Formula of Humanity has been frustrated, at least in its full generality. 
+
+An important observation about the injunction never to treat people merely as means is the essential role of the qualifier `merely'. As H.J. \citet{Paton:1946dz} long ago observed, the Formula of Humanity does not forbid our using another person as a means. When you buy a stamp from a postal clerk you are using the postal clerk as a means for acquiring that stamp despite the clerk's evident humanity, but you have done no wrong. Paton's observation generalizes---without the qualification the Formula of Humanity would forbid all cooperative activity, but that is an implausible and unintended consequence.
+
+This observation is the basis of a fundamental difficulty for any interpretation of the Formula of Humanity that seeks to escape the unclarity of conceiving of people as ends by focusing on the second half of the formula. When you buy a stamp from a postal clerk you are using the postal clerk as a means for acquiring that stamp despite the clerk's evident humanity, but you have done no wrong. Rather, what is forbidden is omitting to treat a person `at the same time as an end.' Thus the injunction to treat people `never merely as a means' is redundant: The moral content of the Formula of Humanity consists \emph{entirely} in the injunction to treat people as ends in themselves. So the unclarity that Raz finds in conceiving people as ends must be squarely faced. (There remains a question, however: If the moral content of the Formula of Humanity consists entirely in the injunction to treat people as ends in themselves, then why emphasize that one should never treat people merely as a means? An answer will emerge in \S \ref{sub:on_not_treating_people_merely_as_a_means})
+
+\subsection{Ends} \label{sub:ends} % (fold)
+
+I believe that this unclarity is due to an overly narrow construal of an end and that Kant is guilty of no such conflation. % TODO Give page reference to Raz's charge of conflation 
+
+It is natural and appropriate to speak of a state of affairs intentionally brought about by action as the end of that action. So in writing the candidate a reference, having an informal word with potential employers, and so on, the end of my action is a state of affairs---that the person is employed. However, this does not entail that \emph{all} ends are states of affairs intentionally brought about by action nor is this latter claim true. A state of affairs is the end of a person's action insofar as that person acts for the sake of bringing about that state of affairs. So in writing a candidate a reference, having an informal word with potential employers, and so on, one performs these actions \emph{for the sake of} bringing about a certain state of affairs, that the person is employed. Fundamentally, ends are that for the sake of which we act (or refrain from acting). Sometimes we act for the sake of bringing about some state of affairs, but this is not inevitable. We can, for example, act for the sake of preserving our continued existence and well-being, but our continued existence and well-being, if these are things genuinely to be \emph{preserved}, already exist. Thankfully, in normal circumstances, at least for academics in the West, these are things which we need not actively pursue. Nevertheless, even in such sanguine circumstances, they set limits on the ends which we can reasonably adopt \citep[see][88-94]{Korsgaard:1996md,Velleman:2006nx}. 
+
+Can people be ends in this broader and more fundamental sense? Of course. A parent can act for the sake of his child by providing for the child's education. In providing for the child's education, the parent acts for the sake of the child. The child is, in this broader sense, the end of the parent's action. In general, to act for the sake of something is to suppose that thing has a value that grounds a reason that renders intelligible your so acting.
+
+% subsection ends (end)
+
+\subsection{Ends in Themselves} \label{sub:ends_in_themselves} % (fold)
+
+What kind of value do people manifest that makes them ends in themselves? Kant entertains the following answer: 
+\begin{quote}
+	But suppose there were something the existence of which in itself has an absolute worth, something which as an end in itself could be a ground of determinate laws; then in it, and in it alone, would lie the ground of a possible categorical imperative, that is, of a practical law. (\textsc{g} 4:428) 
+\end{quote}
+Kant is supposing the existence of something with three evaluative features: 
+\begin{itemize}
+	\item It is an end in itself 
+	\item It is an existent end 
+	\item It has absolute worth 
+\end{itemize}
+
+Let's consider these in turn.
+
+First, Kant is supposing the existence of something that is an end in itself. An end in itself is something whose value is unconditional, independent of inclination, and valid for all rational beings. Kant contrasts ends in themselves with relative ends, ends whose value is conditional, dependent on inclination, and varies from one rational being to another. Relative ends could only the grounds of hypothetical imperatives (\textsc{g} 4:428). Conditional values are not good unconditionally but are only good under certain conditions; under different conditions, they can be without value or even bad. Even secondary virtues such as moderation, self-control, and calm reflection, can be extremely evil if used by a bad will (as when the coolness of a scoundrel not only makes him more dangerous but also more \emph{abominable}). So the value of the conditionally valuable depends on the value of what conditions it. Kant, like Raz, maintains that conditional values are ultimately conditioned by unconditional values. The intuition is that value is \emph{grounded}---the value of things are grounded in what is unconditionally valuable if they are of value at all. 
+
+Second, Kant is supposing the existence of an existent end (\textsc{g} 4:437). An existent end is something that already exists and `whose existence is in itself an end' (\textsc{g} 4:428). Kant contrasts existent ends with ends to be effected. An end to be effected is something that does not yet exist but can be brought about by action (\textsc{g} 4:437). Notice that this contrast only makes sense if ends are are understood in the broader and more fundamental sense of being that for the sake of which we act. Existent ends must be things whose value grounds reasons that make it intelligible that we treat them in certain ways.
+
+Third, Kant is supposing the existence of something that has absolute worth. The contrast might be with things with relative worth. So understood things with absolute value would be ends in themselves. I believe, however, that Kant means more than this. I believe that Kant is anticipating his deployment of the Stoic distinction between dignity and price. (Compare Seneca's distinction between \emph{dignitas} and \emph{pretium}.) Specifically, Kant is supposing the existence of something with dignity. The value of dignity is incomparable; it is a value that cannot be measured against the value of anything else (\textsc{g} 4:434). An end with only relative worth, or price, can be measured against the value of something else, and it would be rational to trade it for something else of equivalent or greater value. It is in this sense that Kant claims that absolute worth is `without limit'. It may be unclear in what sense the value of something could be incomparably greater (since if it is \emph{greater} there is at least one sense in which it is \emph{comparable}). Nevertheless, the idea is intelligible and familiar outside of philosophy, say, when we refuse to sell at any price. It is this feature of dignity, its incomparable value, that explains Kant's identification of respect for the moral law with respect for people considered as ends in themselves. Regarding the value of humanity as an object of comparison dishonors humanity. Proper respect for humanity requires that one only compare one's conduct with the moral law and not with the conduct of other rational beings.
+
+These three features, being an end in itself, being an existent end, and having absolute worth or dignity, are conceptually independent. Thus, for example, nonrational animals and features of the natural environment are existent ends---already existing things for the sake of which we act---but are plausibly not ends in themselves. Similarly, suppose the Messiah would only come if certain conditions were achieved, the coming of the Messiah might be an end in itself and an end to be effected, and so an end in itself need not be an existent end. 
+
+% TODO Find page reference
+\citet[p. xx]{Wood:1999zy} observes that one aspect of their conceptual independence highlights the important role of dignity in Kant's account. Notice that it is conceivable that an end in itself might only have relative worth or price. This might seem inconsistent at first, but consider the following: Suppose that there was something whose value was unconditional, independent of inclination, and valid for all rational beings. But suppose as well that the degree of this value was limited. It might be rational to trade it for something with a greater degree of inclination-dependent value. This possibility is raised by Raz's \citeyearpar{Raz:2001ps} observation that the unconditional nature of a value is independent of the stringency of the reasons it gives rise to. Kant implicitly recognizes this as well---the only thing that prevents this possibility in Kant's system is his contention that humanity, in its self-legislative aspect, has dignity or absolute worth and hence cannot be exchanged for a mere price. So the incomparable value of dignity not only explains Kant's identification of respect for the moral law with respect for people considered as ends in themselves, but it also explains the overriding character of moral reasons since the value that grounds competing nonmoral reasons could only be a price.
+
+Despite their conceptual independence, Kant claims that only one thing has all three features---humanity or rational nature. That these features are united in humanity is thus a synthetic claim.
+
+% subsection ends_in_themselves (end)
+
+\subsection{The Derivation} \label{sub:the_derivation} % (fold)
+
+Supposing there is such a thing as an end in itself, what could it be? Kant's answer has negative and positive stages.
+
+In the negative stage of the argument, Kant considers three candidates and argues that they are not ends in themselves. These are: 
+\begin{itemize}
+	\item Objects of inclination 
+	\item Inclinations themselves 
+	\item Nonrational beings 
+\end{itemize}
+Objects of inclination could not be ends in themselves since their value is conditional on the existence of the relevant inclination and so varies from one rational being to another. The inclinations themselves are not valued simply as such any more than their objects are. Moreover, even when we do value the objects of inclination, we don't necessarily value the inclination considered as the source of that value. Since ends in themselves could neither be the objects of inclination nor the inclinations themselves, Kant infers that `the worth of any object to be acquired by our action is always conditional' (\textsc{g} 4:428). Since an end in itself could not be an end to be effected, it must be an existent end. Existent ends might be rational beings or nonrational beings. Kant claims that the ordinary distinction between persons and things presupposes that ends in themselves could not be nonrational beings. (This is unconvincing, however. The ordinary distinction between persons and things may presuppose that things are of lesser value than persons but this neither commits us to things being valued merely as means nor to persons being valued as ends in themselves.) 
+
+If the objects of inclination, the inclinations themselves, and nonrational beings are not ends in themselves, then what is? We know that ends in themselves must be existent ends but could not be nonrational beings, so they must be rational beings. Specifically, an end in itself must be humanity or rational nature. While Kant cannot demonstrate this, he argues that we necessarily, if implicitly, presuppose this: 
+\begin{quote}
+	The ground of this principle is: rational nature exists as an end in itself. The human being necessarily represents his own existence in this way; so far it is thus a subjective principle of human actions. But every other rational being also represents his existence in this way consequent on just the same rational ground that also holds for me; thus it is at the same time an objective principle from which, as a supreme practical ground, it must be possible to derive all laws of the will. The practical imperative will therefore be the following: So act that you use humanity, whether in your own person or in the person of any other, always at the same time as an end, never merely as a means. (\textsc{g} 4:428-9) 
+\end{quote}
+The argument here is terse and difficult to interpret. The overall structure of the argument is relatively clear; the main difficulty is in interpreting the first step. It cannot be read as a contingent empirical claim about how people explicitly value their own existence for so interpreted it would be false---unfortunately, some people, in the grips of despair, regard their existence as worthless. So how are we to understand Kant's claim that human beings necessarily represent their own existence as an end in itself? 
+
+According to Kant, our humanity or rational nature consists, at least in part, in our capacity to set ends (\textsc{g} 4:437). Given this, Kant might be understood as claiming that when we value the ends we set for ourselves, we must, implicitly at least, value our capacity to set these ends whether or not we explicitly value this capacity in our own person. 
+
+One influential way of developing this idea is due to \citet{Korsgaard:1996md}. Korsgaard understands Kant's reasoning here as a `regress on conditions'. We begin by observing the value we place on the ends we set and then infer that this value is conferred on these ends by the rational nature that sets them. Korsgaard's idea is, roughly, that being the object of rational choice is the \emph{source} of a thing's value. It is because rational nature is the source of all goodness that it must be the fundamental object of respect since if it is not respected as good, then nothing else can be valued as good.
+
+I won't reconstruct Korsgaard's interpretation, in part, because I do not fully understand it \citep[for an elaboration see][]{Wood:1999zy}. More importantly, however, if Kant is moved by the `value-conferring status' of rational nature, then so much the worse for the derivation, for the operative thought is simply false.
+
+A person, in rationally adopting an end, must, implicitly at least, regard that end as valuable, at least to some extent. (Perhaps only in the minimal sense that not acting on that end would be more trouble than it is worth.) Indeed, the perceived value of the end grounds the accepted reason that would render intelligible acting on it, but it does not follow that the value of the end, if genuine, exists just because one has adopted that end. Not only does the perceived value of the end ground the person's reason to promote it, but it grounds what reason there was to adopt that end in the first place. The value of the end must be antecedent to its adoption. But that means that no sense can be attached to the adoption of an end conferring value upon it \citep[see][]{Scanlon:2004ac}.
+
+Similar remarks apply to the intuitive contrast that motivates Kant's discussion of autonomy. Consider two ways in which a person might obey a law. First, a person might obey a law in order to avoid the sanctions imposed by some external authority---the state or God, say. The person's reason for obedience would be to avoid externally imposed sanctions that he fears. If these sanctions ceased to be enforced, or if he ceased to fear them, then the person would no longer have a reason to obey the law. However, a person might obey the law, not because he is {\itshape subject} to it, but because he is the {\itshape author} of it. Even if no sanctions were enforced, the person, as the author of the law, would still have a reason to obey the law. In legislating a law, a person is bound to it, not by any external incentive, but by the reasons he recognized in legislating it. This, however, could only be so if these reasons exist prior to the legislation. (Compare Raz's \citeyear{Raz:2001kx} claim that the sense of active that marks the boundary between our lives as we lead them and what happens in our lives is best understood in terms of our responsiveness to reasons.)
+
+Perhaps, the claim that the value of an end and the reasons it gives rise to exist prior to its adoption is too extreme. \citet{Raz:2001ps} distinguishes the value of a thing and its value for a person. My setting an end may not confer value on that end, but it might confer its value for me. If the end I set is genuinely worthwhile, then my life goes better if I achieve it. Success or failure in achieving me ends (at least those that are genuinely worthwhile) determines a standard by which my life goes better or worse and affects in obvious ways the meaning or significance of my life. Moreover, insofar as the well-being of person is a reason for others to promote or at least not interfere with it, then my adopting a valuable end, gives rise to a reason that did not exist prior to my adoption of it. However, there are limits to the extent to which my setting an end confers its value for me. Achieving an end is an element of a person's well-being only if that end is genuinely worthwhile. So an end's value for a person depends, in part, on the value of that end. Attributing to rational nature a value-conferring status plausibly conflates an end's value for a person for the value of that end.
+
+Is there a way to interpret the first step of the derivation without invoking the value-conferring status of rational nature? 
+
+The problem is to understand how we can move from the value of the adopted end to the value of the capacity to adopt that end. Korsgaard's idea was that being the object of rational choice is the \emph{source} of a thing's value. We have seen reason to doubt this idea. It might be that something is good only if it can be the object of rational choice, but it does not follow that that thing is made good by being the object of rational choice, that rational nature is the source of its value. An idea of Raz's helps to see how this might be so. To understand this, let's pause and consider Raz's metaphysics of value.
+
+% subsection the_derivation (end)
+
+\subsection{Raz and the Metaphysics of Value}\label{sub:raz_and_the_metaphysics_of_value} % (fold)
+
+% TODO decide whether to include the following passage:
+
+\citet[ch.\ 4, \S 4]{Raz:2001ps} distinguishes two abstract categories of value. Everything that is of value is either:
+      \begin{enumerate}
+          \item valuable for something or someone else, or
+          \item valuable in itself.
+      \end{enumerate}
+The distinction is between what is conditionally and what is unconditionally valuable: If something is merely valuable for something or someone else, then its value is conditional or dependent on what it is good for, provided that what it is good for is itself good or valuable. If a thing is valuable for something but is not valuable in itself, then it is valuable only insofar as it is good for something which is itself of value. In contrast, if something is valuable in itself then its value is unconditional; its value does not depend on being good for something or someone else. Though, of course, being valuable in itself is consistent with being, at the same time, good for something or someone else---it is just that its being valuable in itself does not depend on its being, at the same time, good for anything else.
+
+An end in itself is something whose value is unconditional and so is valuable in itself. But there is more to the Kantian conception of an end in itself than this abstract category of value---which is why Raz proposes to replace former with the latter given the alleged obscurity of conceiving of people as ends.
+
+This distinction is not the distinction between instrumental and intrinsic value. To be sure, the value of what is instrumentally valuable is conditional on the value of its consequences or likely consequences. But many intrinsic values can be conditionally valuable as well:
+\begin{quote}
+  When one says that reading Proust enriches one's life one is not pointing to the consequences of the reading. Rather reading Proust with understanding is such enrichment. Engaging with intrinsic goods in the right way and with the right spirit \ldots is good for one in and of itself, in one of many possible ways. \citep[148]{Raz:2001ps}.
+\end{quote}
+This is another respect in which Raz and Kant differ---Kant makes no allowances for intrinsic, noninstrumental value that is not valuable in itself. (See \autoref{sec:conclusion} for an important consequence of this.)
+
+% There is, according to Raz, a mutual and asymmetric dependence between these two categories of value. 
+% 
+% First consider the dependence of the conditional on the unconditional. Conditional values are ultimately conditioned by unconditional values. If $A$ is only good for $B$, then the value of $A$ depends on the value of $B$. If $B$ is not good, then $A$ is without value---it is good for nothing. This much follows from the very notion of conditional value. The dependence on what is not good in itself on what it is good for is transitive. Suppose that $B$ is not good in itself but is itself good only for another thing, $C$. Then the value of $A$ depends on $C$'s being good or valuable. This transitive chain of dependence must ultimately terminate in something that is good in itself. This is not a formal requirement on transitive dependence but is a substantive thesis about the nature of value. The intuition is that value is \emph{grounded}---the value of things are grounded in what is unconditionally valuable if they are of value at all. Specifically, it is of the nature of value that if anything is of value, then there is something that is valuable in itself. 
+% 
+% The value of what is not good in itself may depend on what it can be good for, but the value of what is good in itself depends as well on what can be good for it. Something is valuable in itself only if something can be good for it. This is consistent with the intuition that value is grounded if the dependency of the unconditional on the conditional is a different dependency relation than the dependency of the conditional on the unconditional. This is what it means to claim that there is a mutual \emph{asymmetric} dependence between these categories of value. 
+% 
+% Why believe that what it is good in itself depends on what can be good for it? According to Raz, the contrary supposition would be committed to an implausible form of value autarchy---to the possibility that something can be good in itself without anything being good for it. But this is implausible given a naturalistic conception of the world of values. Values are part of the natural world---a world of enduring objects that causally interact with one another. If duration is part of what is good in what is good in itself, then autarchic value would be something whose duration causally depends on nothing. But this is hard to make sense of, given a minimal naturalism.
+% 
+
+Raz, like Kant, maintains that that valuers are valuable in themselves. To argue for this, he proposes that the following two conditions are jointly sufficient for something to be valuable in itself \citep[151--2]{Raz:2001ps}:
+\begin{itemize}
+	\item there are things that are good for it;
+	\item their being good for it is not conditional on it contributing to the good of something else. 
+\end{itemize}
+Thus, to establish that that valuers are valuable in themselves, it suffices to argue that there are things that are good for valuers and their being good for valuers is not conditional on valuers contributing to the good of something else. 
+
+Raz clearly argues for the second of the jointly sufficient conditions---that being good for valuers is not conditional on valuers contributing to the good of something else:
+\begin{quote}
+	To show that valuers not only play the role of being of value in themselves in relation to goods which are good for others, but that they actually are of value in themselves one has, secondly, to show that their good does not matter simply because it is good for someone or something else. \citep[156]{Raz:2001ps}
+\end{quote}
+
+The argument for the first of the jointly sufficient conditions---that there are things that are good for valuers---is indirect. The bulk of that discussion is devoted to establishing value's immanence: Something is good only if it can be the object of rational choice in the sense that it is only by being the object of rational choice that its value is \emph{realized}. Novels are to be read, music is to be listened to. It is not that unread novels are only of potential value (the way they would be if being the object of rational choice were the source of their value), it is rather that in going unread their value is wasted. The existence of a value does not depend on being the object of rational choice but its realization does. Given the doctrine of value's immanence, the argument that there are things that are good for valuers proceeds as follows:
+\begin{quote}
+	If there are intrinsic values whose realisation requires recognition, a recognition which being valuers they can give, then there are things, which are, assuming that the valuers are good, good for them. \citep[156]{Raz:2001ps}
+\end{quote}
+
+So, there are things which are good for valuers, and their being good for valuers does not depend on valuers being good for something else, and, hence, valuers are valuable in themselves.
+
+% subsection respect_and_the_metaphysics_of_value (end)
+
+\subsection{A Speculative Reconstruction}\label{sub:a_speculative_reconstruction} % (fold)
+
+Raz's doctrine of value's immanence is the basis of, if not an altogether faithful interpretation of the derivation, then a speculative reconstruction of it that is of some independent interest. Value is immanent: In reading a novel, at least with understanding and appreciation, its value is realized. Not only is the value of the novel realized, but its realization is also good for the person who reads it. So a person's capacity to set a valuable end is a condition not only for the the realization of its value but for the good it affords the person who acts on it. Perhaps, then, in implicitly valuing the ends he sets, a person is committed to valuing his capacity to set them, since that capacity is a condition not only for their realization but the good they afford him. Not only are we implicitly committed to valuing our capacity to set ends, but so is every other rational being `on just the same ground'. So we must understand the value of rational nature as an objective value, valid for all rational beings. If the value of rational nature does not depend on the value of anything else, then this is well explained: Rational nature has a value valid for all rational beings because the capacity to set an end is the fundamental condition for the realization of all value and, as such, is a worthy object of respect: 
+\begin{quote}
+	But the lawgiving itself, which determines all worth, must for this very reason have a dignity, that is, an unconditional, incomparable worth; and the word respect alone provides a becoming expression for the estimate of it that a rational being must give. (\textsc{g} 4:436) 
+\end{quote}
+Being the fundamental condition for the realization of all value explains, at least in part, the incomparable value of human dignity. (I say \emph{at least in part} because the full account of what grounds the dignity of humanity involves our autonomous nature as self-legislative members of the kingdom of ends and is ultimately rooted in our noumenal natures.) All rational beings are ends in themselves and this makes an objective claim on all rational beings to recognize themselves and others as ends in themselves. This leads to the formulation of the categorical imperative as the requirement to use humanity in every rational being always as an end and never only as a means.
+
+More would need to be said to fully develop this reasoning, but when properly developed it approaches Raz's argument of chapter four of \emph{Value, Respect, and Attachment}. 
+
+% subsection a_speculative_reconstruction (end)
+
+\subsection{On Not Treating People Merely as a Means} \label{sub:on_not_treating_people_merely_as_a_means} % (fold)
+
+If the moral content of the Formula of Humanity consists entirely in the injunction to treat people as ends in themselves, then why emphasize that one should never treat people merely as a means? 
+
+The second half of the Formula of Humanity is not a general \emph{characterization} of wrongdoing---Scanlon's doubt is vindicated at least to that extent. However, it purports to provide a general \emph{diagnosis} of human wrongdoing \citep[see][]{Wood:1999zy}. Human beings have a tendency to act contrary to duty, not because they altogether fail to value humanity, but because they misconceive the kind of value it has. Thus, as human beings, given our unsocial sociability, we have a tendency to place greater value on the objects of inclination, which merely have a price or relative worth, over the value of humanity, which has instead a dignity or absolute worth. In exchanging the dignity of humanity for a mere price, we treat humanity merely as a means.
+
+This both complements and illuminates the sense in which the Formula of Universal Law (`Act only in accordance with that maxim through which you can at the same time will that it become a universal law'. \textsc{g} 4:421; 4:402) is meant to be a moral `compass' (\textsc{g} 4:404): 
+\begin{quote}
+	If we now attend to ourselves in any transgression of duty, we find that we do not really will that our maxim should become a universal law, since that is impossible for us, but that the opposite of our maxim should instead remain a universal law, only we take the liberty of making an exception to it for ourselves (or just for this once) to the advantage of our inclination. Consequently, if we weighed all cases from one and the same point of view, namely that of reason, we would find a contradiction in our own will, namely that a certain principle be objectively necessary as a universal law and yet subjectively not hold universally but allow exceptions. (\textsc{g} 4:424) 
+\end{quote}
+Thus, when tempted to make false promises when in need of money, we do not will that everyone should make false promises when in need of money. Rather if we succumb to temptation, we will that in general people truly promise only that we, just this once, falsely promise to repay a creditor. So in acting contrary to duty, a person gives unjustifiable preference to his own needs and inclinations over the needs and inclinations of other finite rational beings. The first formula is a moral compass for those lost to temptation, not in the sense that it provides a mechanical algorithm for deriving more specific duties, but as a vivid reminder not to give unjustified preference to one's own needs and inclinations over the needs and inclinations of other finite rational beings, and hence as a corrective to our human propensity to make exceptions for ourselves to universal moral principles. 
+
+Notice that, when we make an exception for ourselves, we fail to express proper respect for the dignity of humanity in ourselves or in the person of another. In making an exception for ourselves, we sacrifice the dignity of humanity for a mere price and, hence, fail to properly respect that dignity. Indeed, Kant anticipates this explicit connection when in the first section of the \emph{Groundwork} he observes that human beings possess: 
+\begin{quote}
+	\ldots a propensity to rationalize against those strict laws of duty and to cast doubt upon their validity, or at least upon their purity and strictness, and where possible, to make them better suited to our wishes and inclinations, that is, to corrupt them at their basis and to destroy all their \emph{dignity} [my emphasis]---something that even common rational cognition cannot, in the end, call good. (\textsc{g} 4:405) 
+\end{quote}
+Thus a tendency to misconceive the value of humanity explains a propensity to make exceptions for ourselves to universal moral principles to the advantage of inclination.
+
+How might we resist temptation and avoid corruption?
+
+% TODO Insert reference to Groundwork
+We all more or less know right from wrong even if we are tempted to make exceptions for ourselves. Specifically, we are equipped with common rational moral cognition---pre-reflective, practical knowledge of the moral law. Nevertheless, philosophical inquiry is required to gain reflective, theoretical knowledge of the moral law. Just as wisdom has need of science not to learn from it but to gain durability and access to its principles, common rational moral cognition has need of philosophy not to learn from it but to gain durability and access to its principles. This is a manifestation of Kant's Pietist background. Kant is looking for a reasonable form of moral reflection to check the purity of our motives. This form of moral reflection is practically necessary since, without it, we are easily tempted to act from wrong reasons. Thus common rational moral cognition can recognize a practical motive to engage in the philosophical reflection that Kant pursues in the second section of the \emph{Groundwork}. There, Kant argues that whereas the first formula is best for the appraisal of action, for access to the moral law the three formulas should be applied to one and the same action thereby bringing the moral law closer to intuition and thereby feeling.
+
+While it is not yet clear what Kant means by `access to the moral law', Kant is at least claiming this much: With the first formula as an external aid, a person has sufficient means to act in conformity with duty. But by gaining access to the moral law thereby bringing it closer to intuition and thereby feeling, a person forms a strong desire to act from duty even though there is no positive inclination to do so or a strong inclination to act contrary to duty. In forming such a desire, common rational moral cognition ensures the durability of its principle.
+
+The durability of a principle is a matter of the degree and stability of its causal influence. The increased durability of the moral law in a person's conduct is explained as follows: In intuiting the dignity of humanity, the value of objects of inclination pale in comparison if indeed they are experienced to be of value at all. The intuition of human dignity gives rise to a distinctive moral pleasure, the feeling of respect. Together they constitute the pure desire to act from duty since a desire just is the representation of an object accompanied by a feeling of pleasure. What's represented in intuition is the grounds of the reasons for acting from duty, and the feeling of respect is a conscious manifestation of the value of the intuited dignity. It is not possible to respect the dignity of humanity and to take pleasure in the fulfillment of an inclination contrary to duty---the feeling of respect precludes such pleasures. This is a way in which the incomparable value of dignity is consciously manifest to the person who intuits it. From this perspective, the perspective of a virtuous sensibility, inclinations contrary to duty do not seem to be reasons and so are motivationally inefficacious. Moreover, since the pure desire does not depend on inclination for its object, it can operate even in the absence of positive inclination. The pure desire to act from duty thus plays an important explanatory role in the motivational psychology of a virtuous sensibility, even though it is a response to reasons and not their source.
+
+In acting from duty, a virtuous person does so out of a phenomenologically vivid sense of the value that grounds the reasons for so acting. It is this phenomenologically vivid sense of the value of humanity that Kant experiences in reading Rousseau (and that presumably `wrenches' the philanthropist from his `wretched insensibility' \textsc{g} 4:398). Kant has not altogether abandoned the moral sentimentalism of his youth. Indeed, his remarks about the practical interest in the moral law can be understood as a (partial) interpretation of Butler's \citeyearpar{Butler:1736id} gloss on moral sense: Insofar as the intuition of a virtuous sensibility takes as its object the value that grounds our duty it is a `perception of the heart'; insofar as the feeling of respect is part of the noncognitive response to the reasons grounded in this value---insofar as it is `self-wrought from reason' (\textsc{g} 4:401n)---it is a `sentiment of the understanding'. (Compare \citealp{Wiggins:1987ta}, development of Humean sentimentalism.)
+
+% subsection on_not_treating_people_merely_as_a_means (end)
+
+% section how_could_people_be_ends (end)
+
+\section{Conclusion} \label{sec:conclusion} % (fold)
+
+Let me summarize the main points so far: 
+\begin{itemize}
+	\item Respect is not a feeling, it is a way of treating people. The feeling of respect is part of the noncognitive response to the reasons there are for such treatment. While the feeling of respect is part of the response to these reasons and not their source, it nevertheless plays an important explanatory role in the motivational psychology of a virtuous sensibility. 
+	\item What is the object of respect---the moral law or people considered as ends in themselves? Kant is best understood as proposing a substantive identification: Respect for the moral law \emph{just is} respect for people considered as ends in themselves. This is a consequence of the kind of value that people enjoy---the dignity of humanity is incomparable. 
+	\item People could be ends only in the fundamental sense of that for the sake of which we act. To act for the sake of something is to suppose that thing has a value that grounds reasons that make intelligible your so acting. What makes people ends and indeed ends in themselves is the dignity of humanity. 
+	\item Humanity or rational nature is the fundamental condition for the realization of all value but not by being its source. Being the fundamental condition for the realization of all value explains, at least in part, the incomparable value of human dignity. 
+\end{itemize}
+On the present interpretation, Kant is no formalist---our duties are grounded, not in the form of practical deliberation, but in a substantive value that grounds the reasons that are the subject matter of practical deliberation. Nor is Kant a constructivist---as rational beings we may be potential authors of the moral law, but in legislating a law we would be bound to it by the reasons we would recognize in so legislating. These reasons must exist prior to our legislation and so could not be constructed by that legislation. 
+
+% the value of an end and the reasons it grounds exist prior to its adoption, and so the adoption of an end could not be their source.
+
+There are clear ways in which Kant's views can be improved that Raz's discussion brings to light. To take just one example, on Kant's view, what's not and end in itself is valuable only insofar as it is a potential end for a rational being---it merely has relative worth. In effect, Kant makes no allowances for intrinsic, noninstrumental value that is not valuable in itself. This failure is responsible, in part, for Kant implausibly identifying the whole of morality with what \citet{Gibbard:1990bh} describes as `morality in the narrow sense' and what \citet{Scanlon:1998hb} describes as the domain of `what we owe to each other'. Specifically, it leads him to analyze duties to nonrational beings such as animals and features of the natural environment as duties owed to \emph{persons}. But this is implausible. The reason it is impermissible to pave over the Grand Canyon on a whim is not, or not merely, that it would spoil the view for other human beings. To suppose otherwise would be to mistake the value of an awe-inspiring view (the importance for a person of experiencing the Grand Canyon first hand) for the value that makes its view awe-inspiring (its unserveyability, the perilous perspective that its view affords). As Raz argues, instrumental and intrinsic value differ: What makes something instrumentally valuable is its use for a person's ends; what makes something intrinsically valuable are its good-making features. That things are intrinsically valuable provides us with a better understanding of our duties to nonrational beings. They are not duties owed to persons; they are duties owed to valuable things. Moreover, duties to nonrational beings are categorical, at least in the sense of being independent of inclination, if not in the sense of providing overriding reasons.
+
+Value plays different roles in Kant and Raz's accounts of respect. For Kant, the source of disrespect is a failure to properly conceive the value of a person. For Raz, the source of disrespect is a failure to recognize or at least acknowledge the value of a thing. These are distinct, if not incompatible accounts---indeed they may be complementary. Failure to acknowledge value may be one source of disrespect, and misconceiving the value of things may be another. 
+
+It is yet unclear why the value of dignity should necessarily override price. As Raz emphasizes, that there are overriding reasons is a substantive and controversial claim that should be explained if true. Kant's full account of what grounds the dignity of humanity involves our autonomous nature as self-legislative members of the kingdom of ends and is ultimately rooted in our noumenal natures. Few may be willing to follow Kant so far. There are several reasons for this, not least of which is unclarity about Kant's dualism concerning our phenomenal and noumenal natures. There is, however, a moral point to this doctrine easily obscured by this unclarity. In claiming that the dignity of humanity is grounded in our noumenal nature, Kant is, in part, making a claim about our experience of that dignity. Our experience of human dignity is an experience of a value that is unconditional, independent of inclination, and universally valid, that is absolute and without limitation and hence incomparably greater than anything (individually or in aggregate) whose value is grounded in the phenomenal. In emphasizing our noumenal nature, Kant is at least claiming that our experience of this value is, fundamentally, a religious experience. It is an experience of something whose value transcends what is phenomenally grounded, that makes us equal to God, and is akin to the awe inspired by the contemplation of the heavens: 
+\begin{quote}
+	Two things fill the mind \ldots with admiration and awe \ldots the starry heavens above me and the moral law within me. (\textsc{kpv} 5:161f) 
+\end{quote}
+
+This moral phenomenology is obscured not only by theoretical unclarity, but also by religious skepticism. Contemporary religious skepticism comprises, among other things, important and apt criticisms of intelligent design, and doubts about the morally malign influence of religion in our cultural confrontations with others. That religious skeptics should be less sensitive to the relevant phenomenology and its potential significance is unsurprising, if perhaps unreasonable. Kant, while a deeply religious thinker, was also, importantly, a committed anti-cleric. But priestcraft is one thing, religious experience another. Thus, for example, Kant would maintain that if religious practice had a propensity to increase our mutual hostility, it would be the religion of false idols---it would be the radical evil of human nature, our unsocial sociability, masquerading as a manifestation of the divine. (So understood, it would be the kind of malign moral fictionalism described in chapter four of my \citeyear{Kalderon:2005gz}.) True religion, involving the operation of free reason, enjoins equal respect for all humanity because of its absolute and unlimited value, a value shared with a divine nature.
+
+To the religious skeptic Kant might retort that the increasingly secular character of modernity has eroded our capacity for awe and other theological sentiments with the consequence that we tend to misconceive the value of their objects. This is manifest, in part, in a widespread misconception of the value of equality---in taking the value of an egalitarian distribution, in circumstances where it is genuinely valuable, to be grounded in its abstract structure rather than the nature of its recipients, contemporary egalitarians mistake the impartial value of equality for an impersonal value (see \citealt[section thirty]{Rawls:1971jz}, and \citealt{Munoz-Darde:2005ed}). It is also manifest in mistake about the extent of aggregation. Kant's view is that aggregation fails of value generally but holds only of a kind of value, since there are things that may not be exchanged for a price. One can deny that all value is aggregative and yet concede that aggregation holds for the prototype of Kantian price, economic value, and perhaps other forms of value as well. From this perspective, aggregative theories of the general nature of value represent an overgeneralization of a special case---a claim for which \citet{Raz:2000tm,Raz:2001ps} independently argues. 
+\begin{table}
+	[h] \setlength{\abovecaptionskip}{0pt} \setlength{\belowcaptionskip}{10pt} \caption{Abbreviations} 
+	\begin{tabular*}
+		{\textwidth}{lp{0.85 
+		\textwidth}}
+	    \textsc{ak} & \emph{Immanuel Kants Schriften} Writings of Immanuel Kant\\
+		\textsc{g} & \emph{Grundlegung zur Metaphysik der Sitten} Groundwork of the metaphysics of morals 1785\\
+		\textsc{kpv} & \emph{Kritik der praktischen Vernunft} Critique of practical reason 1788\\
+		\textsc{ku} & \emph{Kritik der Urteilskraft} Critique of the power of judgment 1790\\
+		\textsc{ma} & \emph{Mutmasslicher Anfang der Menschengeschichte} Conjectural beginnings of human history 1786\\
+		\textsc{ms} & \emph{Metaphysik der Sitten} Metaphysics of morals 1797--8\\
+		\textsc{ve} & \emph{Vorlesungen \"uber Ethik} Lectures on ethics \\
+	\end{tabular*}
+\end{table}
+
+% (end)
+
+% Bibliography
+
+\bibliographystyle{plainnat} 
+\bibliography{Philosophy.bib} 
+
+\end{document} 
