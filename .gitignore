@@ -1,0 +1,28 @@
+# Files to be ignored by git for project raz
+# Created by Mark Eli Kalderon on 2008-03-20
+
+*.o 
+*.lo 
+*.la 
+.*.rej 
+*.rej 
+.*~ 
+*~ 
+.#* 
+.DS_Store 
+*.aux 
+*.log 
+*.out 
+*.pdfsync 
+*.bbl 
+*.blg 
+*.brf 
+*.svn 
+*.dvi 
+*.toc 
+*.nav 
+*.bak 
+*.snm 
+*.fls
+*.pdf
+vc.tex
