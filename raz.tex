@@ -9,6 +9,10 @@
 \newcommand\myauthor{Mark Eli Kalderon} 
 \newcommand\mytitle{Respecting Value}
 
+% Version Control Information
+\immediate\write18{sh ./vc}
+\input{vc}
+
 % Packages
 \usepackage{geometry} \geometry{a4paper} 
 \usepackage{url}
@@ -33,6 +37,9 @@
 \lhead{}
 \chead{}
 \rhead{\itshape{\nouppercase{\leftmark}}}
+\lfoot{\tiny{Revision: \VCRevision ; Author: \VCAuthor ; Date: \VCDateISO}}
+\cfoot{}
+\rfoot{}
 
 % Bibliography
 \usepackage[round]{natbib} 
