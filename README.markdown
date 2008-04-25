@@ -19,3 +19,5 @@ Russell Square, London.
 2. README
 3. TODO
 4. raz.tex
+5. vc
+6. vc-git.awk
