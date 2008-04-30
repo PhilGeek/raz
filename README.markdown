@@ -13,11 +13,10 @@ Engaging Joseph Raz on Reason and Value", held at the Instute of Philosophy,
 School of Advanced Study, Friday 12th May 2006, Room ST274/275 Stewart House,
 Russell Square, London.
 
+These files are prepared for conversion to rtf as required by EJP.
+
 # Contents
 
-1. NOTES
-2. README
-3. TODO
-4. raz.tex
-5. vc
-6. vc-git.awk
+1. README
+2. TODO
+3. raz.tex
