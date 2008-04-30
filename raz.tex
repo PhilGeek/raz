@@ -1,77 +1,21 @@
-%!TEX TS-program = xelatex 
-%!TEX TS-options = -shell-escape -output-driver="xdvipdfmx -q -E"
-%!TEX encoding = UTF-8 Unicode
+%!TEX TS-program = pdflatex 
 
-\documentclass[12pt]{article}
-
-% Definitions
-\newcommand\mykeywords{value, respect, Kant, Raz} 
-\newcommand\myauthor{Mark Eli Kalderon} 
-\newcommand\mytitle{Respecting Value}
-
-% Version Control Information
-\immediate\write18{sh ./vc}
-\input{vc}
-
-% Packages
-\usepackage{geometry} \geometry{a4paper} 
-\usepackage{url}
-\usepackage{pdfsync}
-\usepackage{txfonts}
-\usepackage{color}
-\definecolor{gray}{rgb}{0.459,0.438,0.471}
-
-% XeTeX
-\usepackage[cm-default]{fontspec}
-\usepackage{xltxtra,xunicode}
-\defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
-\setmainfont{Hoefler Text}
-\setsansfont{Gill Sans}
-\setmonofont{Inconsolata}
-
-% Section formatting
-\usepackage[]{titlesec}
-\titleformat{\section}[hang]{\fontsize{14}{14}\scshape}{\S\,{\thesection}}{.5em}{}{}
-\titleformat{\subsection}[hang]{\fontsize{12}{12}\scshape}{\S\,{\thesubsection}}{.5em}{}{}
-\titleformat{\subsubsection}[hang]{\fontsize{12}{12}\scshape}{\S\,{\thesubsubsection}}{.5em}{}{}
-
-% Headers
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\pagenumbering{arabic}
-\lhead{\thepage}
-\chead{}
-\rhead{\itshape{\nouppercase{\leftmark}}}
-\lfoot{\tiny{Revision: \VCRevision ; Author: \VCAuthor ; Date: \VCDateISO}}
-\cfoot{}
-\rfoot{}
+\documentclass[a4paper,12pt]{article}
 
 % Bibliography
 \usepackage[round]{natbib} 
 
-% PDF Stuff
-\usepackage[ plainpages=false, pdfpagelabels, bookmarksnumbered, pdftitle={\mytitle}, pagebackref, pdfauthor={\myauthor}, pdfkeywords={\mykeywords} ]{hyperref} 
-
 % Title Information
-\title{\mytitle \thanks{Thanks to MGF Martin, V\'eronique Munoz-Dard\'e, Joseph Raz, and Charles Travis for their help and encouragement. Thanks as well to two anonymous referees whose comments led to substantial improvements.}} 
-\author{\myauthor} 
+\title{Respecting Value} %\thanks{Thanks to MGF Martin, V\'eronique Munoz-Dard\'e, Joseph Raz, and Charles Travis for their help and encouragement. Thanks as well to two anonymous referees whose comments led to substantial improvements.}
+\author{Mark Eli Kalderon}
 
 %%% BEGIN DOCUMENT
 \begin{document}
 
 % Title Page
-
 \maketitle
 
-% Copyright Page
-%\textcopyright{} \mycopyright
-%
 % Main Content
-%
-% Layout settings
-\setlength{\parindent}{1em}
-
-\vskip 2em \hrule height 0.4pt \vskip 2em
 
 \section{Introduction} \label{sec:introduction} % (fold)
 
